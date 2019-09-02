@@ -2,12 +2,15 @@ package snackbar;
 
 public class VendingMachine {
 
+	private static void machineId = 0;
+
 	private int id;
 	private String name;
 
-	public VendingMachine() {
-		this.id = 0;
-		this.name = "";
+	public VendingMachine(String name) {
+		this.id = machineId;
+		machineId++;
+		this.name = name;
 	}
 
 	public void setId(int id) {
