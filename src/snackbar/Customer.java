@@ -2,14 +2,17 @@ package snackbar;
 
 public class Customer {
 
+	private static int customerId = 0;
+
 	private int id;
 	private String name;
 	private double cash;
 
-	public Customer() {
-		this.id = 0;
-		this.name = "";
-		this.cash = 0.0d;
+	public Customer(String name, double cash) {
+		this.id = customerId;
+		customerId++;
+		this.name = name;
+		this.cash = cash;
 	}
 
 	public void setName(String name) {
