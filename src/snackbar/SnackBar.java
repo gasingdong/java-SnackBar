@@ -15,7 +15,7 @@ public class SnackBar {
 		Snack chocolateBar = new Snack("Chocolate Bar", foodId, 36, 1.00d);
 		Snack pretzel = new Snack("Pretzel", foodId, 30, 2.00d);
 
-		int drunkId = drink.getId();
+		int drinkId = drink.getId();
 		Snack soda = new Snack("Soda", drinkId, 24, 2.50d);
 		Snack water = new Snack("Water", drinkId, 20, 2.75d);
 

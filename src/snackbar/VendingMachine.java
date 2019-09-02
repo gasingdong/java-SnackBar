@@ -2,7 +2,7 @@ package snackbar;
 
 public class VendingMachine {
 
-	private static void machineId = 0;
+	private static int machineId = 0;
 
 	private int id;
 	private String name;
