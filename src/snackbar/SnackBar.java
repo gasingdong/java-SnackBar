@@ -18,5 +18,11 @@ public class SnackBar {
 		int drunkId = drink.getId();
 		Snack soda = new Snack("Soda", drinkId, 24, 2.50d);
 		Snack water = new Snack("Water", drinkId, 20, 2.75d);
+
+		jane.buy(soda.getTotalCost(3));
+		soda.buy(3);
+		System.out.println(jane.getName() + " buys 3 " + soda.getName());
+		System.out.println(jane.getName() + " now has " + jane.getCash());
+		System.out.println("There are " + soda.getQuantity() + " " + soda.getName() + " remaining");
 	}
 }
