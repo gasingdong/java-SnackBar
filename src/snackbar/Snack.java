@@ -2,18 +2,21 @@ package snackbar;
 
 public class Snack {
 
+	private static int snackId = 0;
+
 	private int id;
 	private String name;
 	private int quantity;
 	private double cost;
 	private int machineId;
 
-	public Snack() {
-		this.id = 0;
-		this.name = "";
-		this.quantity = 0;
-		this.cost = 0.0d;
-		this.machineId = 0;
+	public Snack(String name, int machineId, int quantity, double cost) {
+		this.id = snackId;
+		snackId++;
+		this.name = name;
+		this.quantity = quantity;
+		this.cost = cost;
+		this.machineId = machineId;
 	}
 
 	public void setId(int id) {
